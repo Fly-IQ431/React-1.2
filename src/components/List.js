@@ -1,21 +1,13 @@
 import React from "react";
+import Delo from "./Delo";
 
 class List extends React.Component {
-  goalList = [
-    { id: 1, title: "Learn Html", description: "Learn basics tags" },
-    { id: 2, title: "Learn Css", description: "Learn basics css" },
-    { id: 3, title: "Learn JavaScript", description: "Learn basics JS" },
-  ];
-
   render() {
-    if (this.goalList.length > 0)
+    if (this.props.goalList.length > 0)
       return (
         <div className="main_delo">
-          {this.goalList.map((el) => (
-            <div className="delo" key={el.id}>
-              <h3>{el.title} </h3>
-              <p>{el.description}</p>
-            </div>
+          {this.props.goalList.map((el) => (
+            <Delo key={el.id} delo={el} />
           ))}
         </div>
       );

@@ -39,3 +39,38 @@ main {
   padding: 10px;
   border-radius: 10px;
 }
+
+form {
+  background-color: #574964;
+  margin: 50px;
+  width: 300px;
+  border-radius: 20px;
+  float: left;
+}
+
+aside form input,
+aside form button {
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  background-color: #ffdab3;
+  color: #574964;
+  font-size: 15px;
+  width: 87%;
+  border: 10px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+aside form button {
+  background-color: #c8aaaa;
+  font-weight: 700;
+  margin: 10px;
+  width: 92%;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+aside form button:hover {
+  transform: scale(1.1);
+}
