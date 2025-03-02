@@ -19,12 +19,9 @@ body {
 }
 
 main {
-  justify-content: center;
   background-color: #574964;
-  margin: 50px 100px;
-  width: 35%;
   border-radius: 20px;
-  float: left;
+  width: 100%;
 }
 
 .main_delo {
@@ -42,10 +39,8 @@ main {
 
 form {
   background-color: #574964;
-  margin: 50px;
   width: 300px;
   border-radius: 20px;
-  float: left;
 }
 
 aside form input,
@@ -73,4 +68,12 @@ aside form button {
 
 aside form button:hover {
   transform: scale(1.1);
+}
+
+.display {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+  justify-items: center;
 }

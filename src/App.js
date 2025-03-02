@@ -19,12 +19,14 @@ class App extends React.Component {
     return (
       <div>
         <Header title_site="Список дел" />
-        <main>
-          <List goalList={this.state.goalList} />
-        </main>
-        <aside>
-          <AddDelo onAdd={this.addDelo} />
-        </aside>
+        <div className="display">
+          <aside>
+            <AddDelo onAdd={this.addDelo} />
+          </aside>
+          <main>
+            <List goalList={this.state.goalList} />
+          </main>
+        </div>
       </div>
     );
   }
